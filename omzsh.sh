@@ -8,7 +8,7 @@
 #**************************************************
 
 # ============== 安装 git zsh wget ==============
-cd /root
+cd $HOME
 if [ -x "$(command -v yum)" ]; then
     echo ' use yum'>&2
     yum install git -y
