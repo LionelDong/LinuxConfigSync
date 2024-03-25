@@ -41,7 +41,7 @@ fi
 
 
 # ============== 安装配置 oh-my-zsh ==============
-wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
+sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ~/powerlevel10kgit clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ~/powerlevel10k
