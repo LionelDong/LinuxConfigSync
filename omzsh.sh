@@ -57,9 +57,9 @@ fi
 
 
 # 下载 .zshrc
-wget -P $HOME https://github.com/LionelDong/LinuxConfigSync/blob/dev/.zshrc
+wget -P $HOME https://raw.githubusercontent.com/LionelDong/LinuxConfigSync/main/.zshrc
 # 下载 .p10k
-wget -P $HOME https://github.com/LionelDong/LinuxConfigSync/blob/main/.p10k.zsh
+wget -P $HOME https://raw.githubusercontent.com/LionelDong/LinuxConfigSync/main/.p10k.zsh
 
 
 # ===================================
