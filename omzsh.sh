@@ -45,12 +45,16 @@ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-if [ -f "/root/.zshrc" ]; then
-     mv /root/.zshrc /root/.zshrc.bk
+if [ -f "$HOME/.zshrc" ]; then
+     mv $HOME/.zshrc $HOME/.zshrc.bk
 fi
 
 # 下载 .zshrc
-wget -P /root https://raw.githubusercontent.com/kong5664546498/half_a_wheel/master/wheel/onekey-omzsh/.zshrc
+wget -P $HOME https://github.com/LionelDong/LinuxConfigSync/blob/dev/.zshrc
+# 下载 .p10k
+wget -P $HOME https://github.com/LionelDong/LinuxConfigSync/blob/main/.p10k.zsh
+
+
 # ===================================
 
 
@@ -95,7 +99,7 @@ wget -P /root https://raw.githubusercontent.com/kong5664546498/half_a_wheel/mast
 
 
 # 修改默认 bash
-chsh -s /bin/zsh
+sudo chsh -s /bin/zsh
 zsh
 
 exit 0
