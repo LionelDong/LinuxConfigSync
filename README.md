@@ -7,7 +7,7 @@ LinuxConfigSync is a project aimed at synchronizing Linux shell configurations a
 One-click installation of zsh and configuration of oh-my-zsh, with plugin downloads.
 
 ```bash
-wget https://github.com/LionelDong/LinuxConfigSync/blob/main/omzsh.sh && chmod +x omzsh.sh && ./omzsh.sh && rm -f ./omzsh.sh
+wget https://raw.githubusercontent.com/LionelDong/LinuxConfigSync/main/omzsh.sh && chmod +x omzsh.sh && ./omzsh.sh && rm -f ./omzsh.sh
 ```
 
 
