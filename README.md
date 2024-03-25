@@ -18,7 +18,4 @@ Feel free to edit the .zshrc and .p10k.zsh files according to your preferences. 
 Contributions of any kind are welcome, whether it's adding new features, fixing bugs, or improving documentation. Please use pull requests or issues to contribute to the project.
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
-```
-
----
+This project is licensed under the [MIT License](LICENSE). See the LICENSE file for more details.
