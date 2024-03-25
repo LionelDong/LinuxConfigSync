@@ -3,20 +3,13 @@
 ## Introduction
 LinuxConfigSync is a project aimed at synchronizing Linux shell configurations across multiple systems. It supports zsh, oh-my-zsh, and the powerlevel10k (p10k) theme, simplifying the process of maintaining a consistent development environment across various machines.
 
-## Getting Started
-To utilize this project, you need to have zsh, oh-my-zsh, and powerlevel10k installed on your Linux system. Then, clone this repository to your local machine.
+## Usage
+One-click installation of zsh and configuration of oh-my-zsh, with plugin downloads.
 
 ```bash
-git clone https://github.com/yourusername/LinuxConfigSync.git
+wget https://github.com/LionelDong/LinuxConfigSync/blob/main/omzsh.sh && chmod +x omzsh.sh && ./omzsh.sh && rm -f ./omzsh.sh
 ```
 
-## Configuration
-Copy the configuration files from the repository to your home directory, or customize the location according to your needs.
-
-```bash
-cd LinuxConfigSync
-./install.sh
-```
 
 ## Customization
 Feel free to edit the .zshrc and .p10k.zsh files according to your preferences. Remember to regularly push these changes back to the repository to keep the environments synchronized across different systems.

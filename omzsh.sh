@@ -44,10 +44,17 @@ fi
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ~/powerlevel10kgit clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ~/powerlevel10k
 
 if [ -f "$HOME/.zshrc" ]; then
      mv $HOME/.zshrc $HOME/.zshrc.bk
 fi
+
+if [ -f "$HOME/.p10k.zsh" ]; then
+     mv $HOME/.p10k.zsh $HOME/.p10k.zsh.bk
+fi
+
+
 
 # обть .zshrc
 wget -P $HOME https://github.com/LionelDong/LinuxConfigSync/blob/dev/.zshrc
