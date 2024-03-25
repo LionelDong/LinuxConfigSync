@@ -2,12 +2,12 @@
 #
 #**************************************************
 # Author:         Lionel Dong                      
-# Email:         demondonglongfei1995@gmail.com   
+# Email:          demondonglongfei1995@gmail.com   
 # Date:           2024-03-25        
 # Description:                                     
 #**************************************************
 
-# ============== 安装 git zsh wget ==============
+# ============== 瀹夎 git zsh wget ==============
 cd /root
 if [ -x "$(command -v yum)" ]; then
     echo ' use yum'>&2
@@ -40,7 +40,7 @@ fi
 # ===================================
 
 
-# ============== 安装配置 oh-my-zsh ==============
+# ============== 瀹夎閰嶇疆 oh-my-zsh ==============
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
@@ -56,9 +56,9 @@ fi
 
 
 
-# 下载 .zshrc
+# 涓嬭浇 .zshrc
 wget -P $HOME https://github.com/LionelDong/LinuxConfigSync/blob/dev/.zshrc
-# 下载 .p10k
+# 涓嬭浇 .p10k
 wget -P $HOME https://github.com/LionelDong/LinuxConfigSync/blob/main/.p10k.zsh
 
 
@@ -105,7 +105,7 @@ wget -P $HOME https://github.com/LionelDong/LinuxConfigSync/blob/main/.p10k.zsh
 #     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 
-# 修改默认 bash
+# 淇敼榛樿 bash
 sudo chsh -s /bin/zsh
 zsh
 
